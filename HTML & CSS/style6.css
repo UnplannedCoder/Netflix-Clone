@@ -1,0 +1,53 @@
+.container{
+    height: 800px;
+    width: 800px;
+    font-size: 50px;
+    background-color: aqua;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+@media screen and (max-width:770px) {
+    .container{
+        height: 500px;
+        width: 500px;
+        background-color:chartreuse;
+        font-size: 40px;
+    }
+} 
+
+@media screen and (max-width:550px) {
+    .container{
+        height: 300px;
+        width: 300px;
+        background-color: bisque;
+        font-size: 30px;
+    }
+} 
+
+@media screen and (max-width:330px) {
+    .container{
+        height: 200px;
+        width: 200px;
+        background-color:chocolate;
+        font-size: 20px;
+    }
+} 
+
+@media screen and (max-width:220px) {
+    .container{
+        height: 100px;
+        width: 100px;
+        background-color:chocolate;
+        font-size: 10px;
+    }
+} 
+ 
+/* @media screen and (min-width:700px) {
+    .container{
+        height: 300px;
+        width: 300px;
+        background-color: bisque;
+        font-size: 60px;
+    }
+}  */

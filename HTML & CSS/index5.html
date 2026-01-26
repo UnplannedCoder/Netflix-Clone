@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style4.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color:bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 20px;
+        }
+
+        #container{
+            display: grid;
+            grid-template-rows: 2fr 2fr 2fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height: 500px;
+            width: 600px;
+            background-color: blue;
+            gap: 5px;
+            padding: 10px;
+        }
+
+        .box{
+            background-color: chartreuse;
+        }
+
+        .header{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidebar{
+            grid-row-start: 1;
+            grid-row-end: 5;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content1{
+            grid-column-start: 4;
+            grid-column-end: 5;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content2{
+            grid-column-start:2;
+            grid-column-end:3;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content3{
+            grid-column-start:3;
+            grid-column-end:4;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content4{
+            grid-column-start:2;
+            grid-column-end:3;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content5{
+            grid-column-start:3;
+            grid-column-end:4;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer{
+            grid-column-start: 4;
+            grid-row-start: 2;
+            grid-row-end: 5;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box header">Header</div>
+        <div class="box sidebar">sideBar</div>
+        <div class="box content1">Content 1</div>
+        <div class="box content2">Content 2</div>
+        <div class="box content3">Content 3</div>
+        <div class="box content2">Content 4</div>
+        <div class="box content3">Content 5</div>
+        <div class="box footer">Footer</div>
+    </div>
+</body>
+</html>

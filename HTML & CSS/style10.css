@@ -1,0 +1,52 @@
+/* Transition and Transform */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 63px;
+    perspective: 500px  /* 3d transform ko use karna hai to pehle "perspective" mark karna hota hai */
+}
+
+.box{
+    background-color: orange;
+    height: 150px;
+    width: 150px;
+    animation-name: moving;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    /* transition-timing-function: ease-in-out; */
+}
+
+@keyframes moving{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.box:hover{
+    background-color:aqua;
+    height:250px;
+    width: 250px;
+    /* transform:scale(2);  scale se x,y direction me increment hoga jese abhi double hoga */
+    /* transform:translateX(200px); translate se uski position change hogi */ 
+    /* transform: rotateZ(180deg); */
+    /* transform: skewX(30deg); skew means one side tilting */
+}
+
+/* Animation automatically chalta hai or transition ke liye ek trigger movement chahiye hota hai */

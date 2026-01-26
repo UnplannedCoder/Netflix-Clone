@@ -1,0 +1,56 @@
+/* h1{
+    background-color: aqua !important;
+} */
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+
+h1{
+    background-color: aqua;
+    height: 500px;
+    /* margin-top: 38px; */
+}
+
+h2{
+    background-color: orange;
+    height: 100px;
+    /* position: fixed;
+    top: 10px;
+    left: 250px; */
+    position: sticky;
+    top: 0px;
+}
+
+h3{
+    background-color: yellow;
+    height: 900px;
+    font-size: 50px;
+}
+
+nav{
+    background-color:red;
+    border:2px solid black;
+    border-radius: 7px;
+    text-align: center;
+    /* position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%; */
+}
+
+a{
+    color: black;
+    font-size:30px;
+    margin: 100px;;
+}
+
+/* types of positioning:
+1.static - default
+2.relative - left,right,top,bottom can use any. space is reserved for element
+3.sticky - like relative until a certain scroll point, then it behaves like fixed
+4.fixed - can be fixed in one position(left,right,top,bottom). space is not reserved for element
+5.absolute - positioned relative to nearest positioned ancestor. if none, then relative to initial containing block
+*/

@@ -1,0 +1,177 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    background-image: url(./netflix-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Dark overlay like Netflix */
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+#container{
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(0,0,0,0.75);
+    padding: 48px 68px 40px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+h1{
+    text-align: left;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.name-row{
+    display: flex;
+    margin: 20px;
+    font-size: 20px;
+    width: 100%;
+}
+.namerow{
+    display: flex;
+}
+
+#emailAdd{
+    display: block;
+    margin: 20px;
+    font-size: 20px;
+    width: 90%;
+}
+
+#phoneNumber{
+    display: block;
+    margin: 20px;
+    font-size: 20px;
+    width: 100%;
+}
+
+#City{
+    display: block;
+    margin: 20px;
+    font-size: 20px;
+    width: 100%;
+}
+
+#Country{
+    display: block;
+    margin: 20px;
+    font-size: 20px;
+    width: 100%;
+}
+
+#container label{
+    color: #e5e5e5 !important;
+    font-size: 14px;
+}
+
+#fname{
+    height: 30px;
+    margin-top: 10px;
+}
+#lname{
+    height: 30px;
+    margin-top: 10px;
+}
+#email{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 0 12px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+}
+#phone{
+    height: 40px;
+    width: 90%;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 0 12px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+}
+#selCity{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+    padding: 0 12px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+}
+#selCountry{
+    height: 40px;
+    width:100%;
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+    padding: 0 12px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+}
+.front{
+    display: flex;
+}
+
+#mid{
+    text-align: center;
+    margin-top: 12px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#btn{
+    text-align: center;
+}
+button{
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #e50914;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #f40612;
+}
+
+#mid p{
+    color: #737373 !important;
+    font-size: 14px;
+}
